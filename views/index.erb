@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <h1>Simple Calculator</h1>
+  <form action="/calculate" method="post">
+    <label for="a">First number:</label>
+    <input type="text" id="a" name="a">
+    <label for="b">Second number:</label>
+    <input type="text" id="b" name="b">
+    <label for="operation">Operation:</label>
+    <select id="operation" name="operation">
+      <option value="add">Add</option>
+      <option value="subtract">Subtract</option>
+      <option value="multiply">Multiply</option>
+      <option value="divide">Divide</option>
+    </select>
+    <button type="submit">Calculate</button>
+  </form>
+  <% if @result %>
+    <h2>Result: <%= @result %></h2>
+  <% end %>
+</body>
+</html>
