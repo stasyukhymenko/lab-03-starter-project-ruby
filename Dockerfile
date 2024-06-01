@@ -1,4 +1,4 @@
-FROM ruby:alpine3.20
+FROM ruby:bullseye
 
 WORKDIR /app
 
